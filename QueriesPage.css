@@ -1,0 +1,152 @@
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+/* Queries section */
+.queries-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Textarea for comments */
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+/* Upload container */
+.upload-container {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.upload-container label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.upload-container input[type="file"] {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.upload-container .preview {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upload-container .preview img,
+.upload-container .preview video {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.add-query-button,
+.submit-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color:skyblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 180px;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.add-query-button:hover,
+.submit-button:hover {
+  background-color:skyblue;
+}
+
+/* Queries container */
+.submitted-queries {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.submitted-queries h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.query-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.query-item p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.query-file-preview img,
+.query-file-preview video {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .queries-section {
+    width: 90%;
+  }
+
+  textarea {
+    min-height: 80px;
+  }
+
+  .add-query-button,
+  .submit-button {
+    width: 150px;
+  }
+}
